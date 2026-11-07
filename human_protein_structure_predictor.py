@@ -82,7 +82,7 @@ def choose_protein(entries):
 def main():
     gene = input("Enter a human gene symbol: ").strip()
 
-    # Keep the input suitable for a UniProt gene-symbol query.
+    ## Keep the input suitable for a UniProt gene-symbol query ##
     if not gene or not all(
         character.isalnum() or character in "-_."
         for character in gene
